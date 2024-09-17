@@ -3,6 +3,7 @@ LABEL maintainer="cypher0000"
 
 #Setting a default value to Argument USERNAME
 ARG USERNAME=Captain
+ENV USERNAME=${USERNAME}
 
 #Printing message with Argument USERNAME
-RUN echo "Hello, $USERNAME!"
+CMD ["/bin/sh", "-c", "echo Hello, $USERNAME!"]
