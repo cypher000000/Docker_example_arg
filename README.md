@@ -1,5 +1,6 @@
 # Docker_example_arg
 Simple Dockerfile for roadmap.sh that print to console “Hello, Captain!” or “Hello, USERNAME!” if USERNAME value was passed.
+
 https://roadmap.sh/projects/basic-dockerfile
 
 1a. Build the Docker image:
