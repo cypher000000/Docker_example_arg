@@ -3,18 +3,13 @@ Simple Dockerfile for roadmap.sh that print to console “Hello, Captain!” or 
 
 https://roadmap.sh/projects/basic-dockerfile
 
-1a. Build the Docker image:
+1. Build the Docker image:
 Run the following command to build the Docker image using the Dockerfile in the root directory with default value “Captain”:
 ```bash
 docker build -t simple-hello .
 ```
 
-1b. Run the following command to build the Docker image using the Dockerfile in the root directory with specified value USERNAME:
-```bash
-docker build --build-arg USERNAME="Cypher" -t simple-hello .
-```
-
-2. After building the image, you can run the container using:
+2a. After building the image, you can run the container using:
 ```bash
 docker run simple-hello
 ```
@@ -24,7 +19,12 @@ docker run simple-hello
 Hello, Captain!
 ```
 
-3b. After building and running the container with with specified value USERNAME, you should see the following output:
+2b. Run the following command to run the Docker image with specified value USERNAME:
+```bash
+docker run -e USERNAME="Cypher" simple-hello
+```
+
+3b. After running the container with with specified value USERNAME, you should see the following output:
 ```bash
 Hello, Cypher!
 ```
